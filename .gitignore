@@ -1,5 +1,7 @@
 *.class
-
+*.bak
+*.LST
+*.OBJ
 # Package Files #
 *.jar
 *.war

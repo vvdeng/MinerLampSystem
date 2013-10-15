@@ -1,0 +1,5 @@
+"main.obj",
+"hanzi.obj",
+"vvspi.obj" 
+TO "LEDArray16WordTest" 
+RAMSIZE(256) 

@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>µVision2 Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\workspace\minerlampterminal\minerlampterminal.uv2
+Project File Date:  05/10/2012
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(523): error C129: missing ';' before 'detectWaitTime'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=107.6 xdata=221 code=4126
+creating hex file from "minerlampterminal"...
+"minerlampterminal" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(573): error C141: syntax error near '.1'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=107.6 xdata=221 code=4128
+creating hex file from "minerlampterminal"...
+"minerlampterminal" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(573): error C202: 'batAdc': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=107.6 xdata=221 code=4126
+creating hex file from "minerlampterminal"...
+"minerlampterminal" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+"minerlampterminal" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+"minerlampterminal" - 0 Error(s), 0 Warning(s).

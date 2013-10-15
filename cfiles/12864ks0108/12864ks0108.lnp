@@ -1,0 +1,5 @@
+"main.obj",
+"hanzi.obj",
+"vvspi.obj" 
+TO "12864ks0108" 
+RAMSIZE(256) 

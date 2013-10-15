@@ -1,0 +1,4 @@
+"main.obj",
+"insideStorage.obj" 
+TO "minerlampcollector" 
+RAMSIZE(256) 

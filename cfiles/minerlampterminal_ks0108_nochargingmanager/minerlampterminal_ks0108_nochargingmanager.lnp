@@ -1,0 +1,7 @@
+"insideStorage.obj",
+"main.obj",
+"hanzi.obj",
+"lcd12864.obj",
+"vvspi.obj" 
+TO "minerlampterminal_ks0108_nochargingmanager" 
+RAMSIZE(256) 

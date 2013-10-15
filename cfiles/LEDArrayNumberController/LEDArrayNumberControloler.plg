@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>µVision2 Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\workspace\LEDArrayNumberController\LEDArrayNumberControloler.uv2
+Project File Date:  10/30/2012
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=52.0 xdata=128 code=1681
+creating hex file from "LEDArrayNumberControloler"...
+"LEDArrayNumberControloler" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAYMS?MAIN
+Program Size: data=52.0 xdata=128 code=1675
+creating hex file from "LEDArrayNumberControloler"...
+"LEDArrayNumberControloler" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAYMS?MAIN
+Program Size: data=52.0 xdata=128 code=1673
+creating hex file from "LEDArrayNumberControloler"...
+"LEDArrayNumberControloler" - 0 Error(s), 1 Warning(s).

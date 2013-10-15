@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>µVision2 Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\workspace\minerlampterminalusingADC\minerlampterminalusingADC.uv2
+Project File Date:  05/10/2012
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(1363): error C202: 'timeCount': undefined identifier
+MAIN.C(1364): error C202: 'timeCount': undefined identifier
+MAIN.C(1365): error C202: 'timeCount': undefined identifier
+MAIN.C(1366): error C202: 'timeFlag': undefined identifier
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_STATESHOW?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DISPLAYBATSTATE?MAIN
+Program Size: data=109.6 xdata=221 code=4691
+creating hex file from "minerlampterminalusingADC"...
+"minerlampterminalusingADC" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=105.6 xdata=221 code=4563
+creating hex file from "minerlampterminalusingADC"...
+"minerlampterminalusingADC" - 0 Error(s), 0 Warning(s).

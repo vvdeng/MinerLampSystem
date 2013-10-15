@@ -1,0 +1,294 @@
+BL51 BANKED LINKER/LOCATER V5.12                                                        11/09/2012  15:43:28  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V5.12, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE main.obj TO LEDArrayNumberControloler RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?OFFXADD)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  LEDArrayNumberControloler (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            REG     0008H     0008H     ABSOLUTE     "REG BANK 1"
+            DATA    0010H     001DH     UNIT         ?DT?MAIN
+            DATA    002DH     0006H     UNIT         _DATA_GROUP_
+            IDATA   0033H     0001H     UNIT         ?STACK
+
+            * * * * * * *  X D A T A   M E M O R Y  * * * * * * *
+            XDATA   0000H     0080H     UNIT         ?XD?MAIN
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     0018H     UNIT         ?PR?_INPUTBYTE?MAIN
+            CODE    001BH     0003H     ABSOLUTE     
+            CODE    001EH     0290H     UNIT         ?CO?MAIN
+            CODE    02AEH     0113H     UNIT         ?PR?_DISPLAYCHAR?MAIN
+            CODE    03C1H     009DH     UNIT         ?C_INITSEG
+            CODE    045EH     0092H     UNIT         ?PR?TIMER1_ISR?MAIN
+            CODE    04F0H     008CH     UNIT         ?C_C51STARTUP
+            CODE    057CH     0078H     UNIT         ?PR?CREATEDISPLAY?MAIN
+            CODE    05F4H     0039H     UNIT         ?C?LIB_CODE
+            CODE    062DH     001BH     UNIT         ?PR?_DELAYMS?MAIN
+            CODE    0648H     001BH     UNIT         ?PR?INPUTSELECTION?MAIN
+            CODE    0663H     0013H     UNIT         ?PR?MAIN?MAIN
+            CODE    0676H     0010H     UNIT         ?PR?INIT_TIMER1?MAIN
+            CODE    0686H     0003H     UNIT         ?PR?_DELAYUS2X?MAIN
+
+
+
+OVERLAY MAP OF MODULE:   LEDArrayNumberControloler (MAIN)
+
+
+SEGMENT                           DATA_GROUP 
+  +--> CALLED SEGMENT           START    LENGTH
+-----------------------------------------------
+?PR?TIMER1_ISR?MAIN             -----    -----
+  +--> ?PR?_INPUTBYTE?MAIN
+BL51 BANKED LINKER/LOCATER V5.12                                                      11/09/2012  15:43:28  PAGE 2
+
+
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP                   -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                   -----    -----
+  +--> ?PR?INPUTSELECTION?MAIN
+  +--> ?PR?INIT_TIMER1?MAIN
+  +--> ?PR?CREATEDISPLAY?MAIN
+
+?PR?CREATEDISPLAY?MAIN          -----    -----
+  +--> ?CO?MAIN
+  +--> ?PR?_DISPLAYCHAR?MAIN
+
+?PR?_DISPLAYCHAR?MAIN           002DH    0006H
+
+
+
+SYMBOL TABLE OF MODULE:  LEDArrayNumberControloler (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0096H         PUBLIC        P2M0
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  C:0003H         PUBLIC        _InputByte
+  D:00A8H         PUBLIC        IE
+  B:00A0H.7       PUBLIC        T_CLK
+  C:001EH         PUBLIC        fixedChar
+  B:00B0H.6       PUBLIC        OE
+  D:00B8H         PUBLIC        IP
+  D:0013H         PUBLIC        displayType
+  C:0663H         PUBLIC        main
+  C:0676H         PUBLIC        Init_Timer1
+  B:00A0H.6       PUBLIC        T_STR
+  C:062DH         PUBLIC        _delayMs
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:0088H         PUBLIC        TCON
+  D:0014H         PUBLIC        tab
+  X:0000H         PUBLIC        strBuffer
+  C:005EH         PUBLIC        fixedNum
+  B:00A8H.3       PUBLIC        ET1
+  B:00A0H.5       PUBLIC        T_IO
+  D:008DH         PUBLIC        TH1
+  D:008BH         PUBLIC        TL1
+  C:057CH         PUBLIC        createDisplay
+  B:0088H.6       PUBLIC        TR1
+  C:02AEH         PUBLIC        _displayChar
+BL51 BANKED LINKER/LOCATER V5.12                                                      11/09/2012  15:43:28  PAGE 3
+
+
+  C:0648H         PUBLIC        inputSelection
+  D:001CH         PUBLIC        DIS
+  C:045EH         PUBLIC        Timer1_isr
+  C:0686H         PUBLIC        _delayUs2x
+  D:00C8H         PUBLIC        T2CON
+  D:002CH         PUBLIC        address
+  D:00D0H         PUBLIC        PSW
+  C:00FEH         PUBLIC        fixedAlpha
+  -------         PROC          _DELAYUS2X
+  D:0007H         SYMBOL        t
+  C:0686H         LINE#         193
+  C:0686H         LINE#         194
+  C:0688H         LINE#         196
+  -------         ENDPROC       _DELAYUS2X
+  -------         PROC          _DELAYMS
+  D:0004H         SYMBOL        t
+  C:062DH         LINE#         198
+  C:0631H         LINE#         200
+  C:063BH         LINE#         202
+  C:0640H         LINE#         203
+  C:0645H         LINE#         204
+  C:0647H         LINE#         205
+  -------         ENDPROC       _DELAYMS
+  -------         PROC          _INPUTBYTE
+  D:0007H         SYMBOL        ucDa
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0003H         LINE#         206
+  C:0003H         LINE#         207
+  C:0003H         LINE#         209
+  C:0005H         LINE#         210
+  C:0005H         LINE#         211
+  C:0010H         LINE#         212
+  C:0012H         LINE#         213
+  C:0014H         LINE#         214
+  C:0018H         LINE#         215
+  C:001AH         LINE#         216
+  -------         ENDPROC       _INPUTBYTE
+  -------         PROC          INIT_TIMER1
+  C:0676H         LINE#         219
+  C:0676H         LINE#         220
+  C:0676H         LINE#         221
+  C:0679H         LINE#         222
+  C:067CH         LINE#         223
+  C:067FH         LINE#         224
+  C:0681H         LINE#         225
+  C:0683H         LINE#         226
+  C:0685H         LINE#         227
+  -------         ENDPROC       INIT_TIMER1
+  -------         PROC          _DISPLAYCHAR
+  D:002DH         SYMBOL        charIndex
+  D:0005H         SYMBOL        x
+  D:0031H         SYMBOL        type
+  D:0032H         SYMBOL        pos
+  -------         DO            
+  D:0007H         SYMBOL        i
+BL51 BANKED LINKER/LOCATER V5.12                                                      11/09/2012  15:43:28  PAGE 4
+
+
+  -------         ENDDO         
+  C:02AEH         LINE#         228
+  C:02B4H         LINE#         231
+  C:02BAH         LINE#         232
+  C:02BBH         LINE#         233
+  C:02BBH         LINE#         234
+  C:02E5H         LINE#         235
+  C:02EAH         LINE#         236
+  C:02EAH         LINE#         237
+  C:02EAH         LINE#         238
+  C:02F0H         LINE#         239
+  C:02F1H         LINE#         240
+  C:02F1H         LINE#         241
+  C:031FH         LINE#         243
+  C:0324H         LINE#         244
+  C:0324H         LINE#         245
+  C:032AH         LINE#         246
+  C:032BH         LINE#         247
+  C:032BH         LINE#         249
+  C:0359H         LINE#         251
+  C:035EH         LINE#         252
+  C:035EH         LINE#         253
+  C:035EH         LINE#         254
+  C:0360H         LINE#         255
+  C:0360H         LINE#         256
+  C:0391H         LINE#         257
+  C:03BCH         LINE#         259
+  C:03C0H         LINE#         260
+  C:03C0H         LINE#         261
+  C:03C0H         LINE#         263
+  -------         ENDPROC       _DISPLAYCHAR
+  -------         PROC          CREATEDISPLAY
+  C:057CH         LINE#         264
+  C:057CH         LINE#         265
+  C:0582H         LINE#         266
+  C:0582H         LINE#         267
+  C:059DH         LINE#         268
+  C:05A3H         LINE#         269
+  C:05A5H         LINE#         270
+  C:05A5H         LINE#         271
+  C:05C4H         LINE#         272
+  C:05E3H         LINE#         274
+  C:05F3H         LINE#         275
+  C:05F3H         LINE#         276
+  -------         ENDPROC       CREATEDISPLAY
+  -------         PROC          INPUTSELECTION
+  C:0648H         LINE#         277
+  C:0648H         LINE#         284
+  C:064EH         LINE#         285
+  C:0659H         LINE#         286
+  C:0662H         LINE#         287
+  -------         ENDPROC       INPUTSELECTION
+  -------         PROC          MAIN
+  C:0663H         LINE#         288
+  C:0663H         LINE#         289
+  C:0663H         LINE#         291
+  C:0666H         LINE#         292
+BL51 BANKED LINKER/LOCATER V5.12                                                      11/09/2012  15:43:28  PAGE 5
+
+
+  C:0669H         LINE#         293
+  C:066BH         LINE#         294
+  C:066EH         LINE#         296
+  C:066EH         LINE#         297
+  C:066EH         LINE#         298
+  C:0671H         LINE#         299
+  C:0674H         LINE#         300
+  -------         ENDPROC       MAIN
+  -------         PROC          TIMER1_ISR
+  -------         DO            
+  D:0010H         SYMBOL        count
+  D:0011H         SYMBOL        j
+  D:0012H         SYMBOL        i
+  -------         ENDDO         
+  C:045EH         LINE#         303
+  C:046BH         LINE#         307
+  C:046EH         LINE#         308
+  C:0471H         LINE#         309
+  C:0474H         LINE#         310
+  C:0474H         LINE#         311
+  C:0494H         LINE#         312
+  C:04B4H         LINE#         313
+  C:04BDH         LINE#         314
+  C:04BFH         LINE#         315
+  C:04C1H         LINE#         316
+  C:04CFH         LINE#         317
+  C:04D1H         LINE#         318
+  C:04D5H         LINE#         319
+  C:04DAH         LINE#         320
+  C:04DDH         LINE#         321
+  C:04E2H         LINE#         322
+  C:04E2H         LINE#         323
+  C:04E5H         LINE#         324
+  C:04E5H         LINE#         325
+  -------         ENDPROC       TIMER1_ISR
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        ?C?CLDOPTR
+  C:05F4H         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?OFFXADD
+  C:0621H         PUBLIC        ?C?OFFXADD
+  -------         ENDMOD        ?C?OFFXADD
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAYMS?MAIN
+
+Program Size: data=52.0 xdata=128 code=1673
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

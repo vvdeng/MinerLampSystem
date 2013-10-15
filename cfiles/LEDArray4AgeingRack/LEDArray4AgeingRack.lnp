@@ -1,0 +1,6 @@
+"hanzi.obj",
+"insideStorage.obj",
+"main.obj",
+"vvspi.obj" 
+TO "LEDArray4AgeingRack" 
+RAMSIZE(256) 

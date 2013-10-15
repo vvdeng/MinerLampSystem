@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>µVision2 Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\workspace\minerlampcollector20pergroup\minerlampcollector20pergroup.uv2
+Project File Date:  05/24/2013
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+MAIN.C(561): error C141: syntax error near ')'
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=119.4 xdata=975 code=6271
+creating hex file from "minerlampcollector20pergroup"...
+"minerlampcollector20pergroup" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=119.4 xdata=975 code=6221
+creating hex file from "minerlampcollector20pergroup"...
+"minerlampcollector20pergroup" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=119.4 xdata=975 code=6221
+creating hex file from "minerlampcollector20pergroup"...
+"minerlampcollector20pergroup" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+"minerlampcollector20pergroup" - 0 Error(s), 0 Warning(s).

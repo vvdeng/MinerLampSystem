@@ -1,0 +1,7 @@
+"vvspi.obj",
+"hanzi.obj",
+"insideStorage.obj",
+"lcd12864.obj",
+"main.obj" 
+TO "minerlampterminal_with_timer" 
+RAMSIZE(256) 

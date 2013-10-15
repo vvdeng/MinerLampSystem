@@ -1,0 +1,21 @@
+<html>
+<body>
+<pre>
+<h1>µVision2 Build Log</h1>
+<h2>Project:</h2>
+D:\Keil\workspace\LEDArrayFixed16Words\LEDArrayFixed16Words.uv2
+Project File Date:  11/05/2012
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=106.3 xdata=1009 code=3018
+creating hex file from "LEDArrayFixed16Words"...
+"LEDArrayFixed16Words" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=106.3 xdata=1009 code=3020
+creating hex file from "LEDArrayFixed16Words"...
+"LEDArrayFixed16Words" - 0 Error(s), 0 Warning(s).

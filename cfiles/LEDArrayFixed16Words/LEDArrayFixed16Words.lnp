@@ -1,0 +1,6 @@
+"hanzi.obj",
+"insideStorage.obj",
+"main.obj",
+"vvspi.obj" 
+TO "LEDArrayFixed16Words" 
+RAMSIZE(256) 

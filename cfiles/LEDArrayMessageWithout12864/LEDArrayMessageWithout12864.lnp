@@ -1,0 +1,8 @@
+"main.obj",
+"insideStorage.obj",
+"hanzi.obj",
+"vvsimulspi.obj" 
+TO "LEDArrayMessageWithout12864" 
+RAMSIZE(256) 
+CODE( 0X0000-0XEFFF )
+XDATA( 0X0000-0X03FF )

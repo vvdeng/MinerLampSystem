@@ -1,0 +1,7 @@
+"hanzi.obj",
+"insideStorage.obj",
+"lcd12864.obj",
+"main.obj",
+"vvspi.obj" 
+TO "minerlampterminal_v1.6_with_32x32name" 
+RAMSIZE(256) 

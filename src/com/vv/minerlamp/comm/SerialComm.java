@@ -158,7 +158,10 @@ public class SerialComm implements /* Runnable, */SerialPortEventListener {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			JOptionPane.showMessageDialog(null, "通信异常，请重新插拔计算机串口的连接");
+	//		JOptionPane.showMessageDialog(null, "通信异常，请重新插拔计算机串口的连接");
+			JOptionPane.showMessageDialog(null,
+					"通信异常，请重新插拔计算机串口的连接后\n重启本软件");
+			System.exit(0);
 		}
 	}
 
